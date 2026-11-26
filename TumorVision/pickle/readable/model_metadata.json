@@ -1,0 +1,497 @@
+{
+  "project_name": "TumorVision",
+  "target_column": "diagnosis",
+  "target_mapping": {
+    "B": 0,
+    "M": 1
+  },
+  "reverse_target_mapping": {
+    "0": "Benign",
+    "1": "Malignant"
+  },
+  "positive_class": 1,
+  "positive_class_label": "Malignant",
+  "feature_names": [
+    "radius_mean",
+    "texture_mean",
+    "perimeter_mean",
+    "area_mean",
+    "smoothness_mean",
+    "compactness_mean",
+    "concavity_mean",
+    "concave points_mean",
+    "symmetry_mean",
+    "fractal_dimension_mean",
+    "radius_se",
+    "texture_se",
+    "perimeter_se",
+    "area_se",
+    "smoothness_se",
+    "compactness_se",
+    "concavity_se",
+    "concave points_se",
+    "symmetry_se",
+    "fractal_dimension_se",
+    "radius_worst",
+    "texture_worst",
+    "perimeter_worst",
+    "area_worst",
+    "smoothness_worst",
+    "compactness_worst",
+    "concavity_worst",
+    "concave points_worst",
+    "symmetry_worst",
+    "fractal_dimension_worst"
+  ],
+  "feature_stats": {
+    "radius_mean": {
+      "min": 6.981,
+      "max": 28.11,
+      "mean": 14.166076923076924,
+      "median": 13.34,
+      "std": 3.57908106247666
+    },
+    "texture_mean": {
+      "min": 9.71,
+      "max": 39.28,
+      "mean": 19.417692307692306,
+      "median": 18.9,
+      "std": 4.290652958770482
+    },
+    "perimeter_mean": {
+      "min": 43.79,
+      "max": 188.5,
+      "mean": 92.21586813186812,
+      "median": 86.18,
+      "std": 24.717118095419718
+    },
+    "area_mean": {
+      "min": 143.5,
+      "max": 2501.0,
+      "mean": 659.5782417582418,
+      "median": 546.4,
+      "std": 360.418685601652
+    },
+    "smoothness_mean": {
+      "min": 0.06251,
+      "max": 0.1634,
+      "mean": 0.09599294505494504,
+      "median": 0.09524,
+      "std": 0.014309691030446542
+    },
+    "compactness_mean": {
+      "min": 0.01938,
+      "max": 0.3454,
+      "mean": 0.10383485714285715,
+      "median": 0.09228,
+      "std": 0.05391023379112233
+    },
+    "concavity_mean": {
+      "min": 0.0,
+      "max": 0.4268,
+      "mean": 0.08918428285714286,
+      "median": 0.0594,
+      "std": 0.08169800198599544
+    },
+    "concave points_mean": {
+      "min": 0.0,
+      "max": 0.2012,
+      "mean": 0.0490145978021978,
+      "median": 0.03334,
+      "std": 0.03968597243507605
+    },
+    "symmetry_mean": {
+      "min": 0.106,
+      "max": 0.304,
+      "mean": 0.18149714285714286,
+      "median": 0.1799,
+      "std": 0.027646249727175373
+    },
+    "fractal_dimension_mean": {
+      "min": 0.05024,
+      "max": 0.09744,
+      "mean": 0.06271481318681318,
+      "median": 0.0613,
+      "std": 0.006970598789705975
+    },
+    "radius_se": {
+      "min": 0.1115,
+      "max": 2.873,
+      "mean": 0.4111872527472527,
+      "median": 0.3274,
+      "std": 0.2901827920271833
+    },
+    "texture_se": {
+      "min": 0.3602,
+      "max": 4.885,
+      "mean": 1.217881978021978,
+      "median": 1.139,
+      "std": 0.5523121407898981
+    },
+    "perimeter_se": {
+      "min": 0.757,
+      "max": 21.98,
+      "mean": 2.9115687912087918,
+      "median": 2.31,
+      "std": 2.1231189453528923
+    },
+    "area_se": {
+      "min": 6.802,
+      "max": 542.2,
+      "mean": 41.27910329670329,
+      "median": 24.87,
+      "std": 48.384174369096904
+    },
+    "smoothness_se": {
+      "min": 0.001713,
+      "max": 0.03113,
+      "mean": 0.006895252747252748,
+      "median": 0.006261,
+      "std": 0.0028546094141482397
+    },
+    "compactness_se": {
+      "min": 0.002252,
+      "max": 0.1064,
+      "mean": 0.025323432967032967,
+      "median": 0.02016,
+      "std": 0.017624042436555774
+    },
+    "concavity_se": {
+      "min": 0.0,
+      "max": 0.396,
+      "mean": 0.03201755076923077,
+      "median": 0.02586,
+      "std": 0.03172928503895084
+    },
+    "concave points_se": {
+      "min": 0.0,
+      "max": 0.05279,
+      "mean": 0.011690617582417583,
+      "median": 0.01091,
+      "std": 0.0062892658066323074
+    },
+    "symmetry_se": {
+      "min": 0.007882,
+      "max": 0.07895,
+      "mean": 0.0204266989010989,
+      "median": 0.0187,
+      "std": 0.008310589698451729
+    },
+    "fractal_dimension_se": {
+      "min": 0.0008948,
+      "max": 0.02984,
+      "mean": 0.003766038021978022,
+      "median": 0.003131,
+      "std": 0.002631996745288172
+    },
+    "radius_worst": {
+      "min": 7.93,
+      "max": 36.04,
+      "mean": 16.351514285714288,
+      "median": 14.92,
+      "std": 4.901037193935313
+    },
+    "texture_worst": {
+      "min": 12.02,
+      "max": 49.54,
+      "mean": 25.90487912087912,
+      "median": 25.48,
+      "std": 6.079531733422472
+    },
+    "perimeter_worst": {
+      "min": 50.41,
+      "max": 251.2,
+      "mean": 107.86048351648353,
+      "median": 97.65,
+      "std": 34.17601924443005
+    },
+    "area_worst": {
+      "min": 185.2,
+      "max": 4254.0,
+      "mean": 890.5692307692308,
+      "median": 683.4,
+      "std": 582.3461809144269
+    },
+    "smoothness_worst": {
+      "min": 0.07117,
+      "max": 0.2226,
+      "mean": 0.13208303296703297,
+      "median": 0.1311,
+      "std": 0.023481191208296583
+    },
+    "compactness_worst": {
+      "min": 0.02729,
+      "max": 1.058,
+      "mean": 0.25552947252747255,
+      "median": 0.2167,
+      "std": 0.15840002529335978
+    },
+    "concavity_worst": {
+      "min": 0.0,
+      "max": 1.252,
+      "mean": 0.27516636703296704,
+      "median": 0.2298,
+      "std": 0.21206631177059154
+    },
+    "concave points_worst": {
+      "min": 0.0,
+      "max": 0.291,
+      "mean": 0.11549070549450549,
+      "median": 0.101,
+      "std": 0.06684385191051351
+    },
+    "symmetry_worst": {
+      "min": 0.1565,
+      "max": 0.6638,
+      "mean": 0.2913637362637363,
+      "median": 0.2823,
+      "std": 0.06304339131624152
+    },
+    "fractal_dimension_worst": {
+      "min": 0.05504,
+      "max": 0.2075,
+      "mean": 0.0841236923076923,
+      "median": 0.08009,
+      "std": 0.018168652434089758
+    }
+  },
+  "dataset_summary": {
+    "raw_rows": 569,
+    "raw_columns": 33,
+    "cleaned_rows": 569,
+    "num_features": 30,
+    "dropped_empty_columns": [
+      "Unnamed: 32"
+    ],
+    "dropped_id_columns": [
+      "id"
+    ],
+    "duplicate_rows_removed": 0,
+    "missing_values_after_cleaning": 0,
+    "class_counts_raw": {
+      "B": 357,
+      "M": 212
+    }
+  },
+  "train_samples": 455,
+  "test_samples": 114,
+  "random_state": 42,
+  "test_size": 0.2,
+  "pca_info": {
+    "variance_threshold": 0.95,
+    "n_components": 10,
+    "explained_variance_ratio": [
+      0.4459352220227062,
+      0.18545255453685303,
+      0.09584641206459554,
+      0.06593768249233609,
+      0.0562228616110624,
+      0.03988487723885156,
+      0.022144931659004885,
+      0.01614005640816539,
+      0.012847889581317797,
+      0.011656613824207398
+    ],
+    "cumulative_variance_ratio": [
+      0.4459352220227062,
+      0.6313877765595592,
+      0.7272341886241548,
+      0.7931718711164909,
+      0.8493947327275533,
+      0.8892796099664049,
+      0.9114245416254098,
+      0.9275645980335752,
+      0.9404124876148929,
+      0.9520691014391003
+    ]
+  },
+  "evaluation_results": [
+    {
+      "model_name": "Logistic Regression (No PCA)",
+      "algorithm": "Logistic Regression",
+      "uses_pca": false,
+      "pickle_file": "logistic_regression.pkl",
+      "accuracy": 0.9649122807017544,
+      "precision": 0.975,
+      "recall": 0.9285714285714286,
+      "f1_score": 0.9512195121951219,
+      "confusion_matrix": [
+        [
+          71,
+          1
+        ],
+        [
+          3,
+          39
+        ]
+      ],
+      "false_negatives": 3,
+      "false_positives": 1
+    },
+    {
+      "model_name": "Logistic Regression (PCA)",
+      "algorithm": "Logistic Regression",
+      "uses_pca": true,
+      "pickle_file": "logistic_regression_pca.pkl",
+      "accuracy": 0.9736842105263158,
+      "precision": 1.0,
+      "recall": 0.9285714285714286,
+      "f1_score": 0.9629629629629629,
+      "confusion_matrix": [
+        [
+          72,
+          0
+        ],
+        [
+          3,
+          39
+        ]
+      ],
+      "false_negatives": 3,
+      "false_positives": 0
+    },
+    {
+      "model_name": "K-Nearest Neighbours (No PCA)",
+      "algorithm": "K-Nearest Neighbours",
+      "uses_pca": false,
+      "pickle_file": "knn.pkl",
+      "accuracy": 0.956140350877193,
+      "precision": 0.9743589743589743,
+      "recall": 0.9047619047619048,
+      "f1_score": 0.9382716049382716,
+      "confusion_matrix": [
+        [
+          71,
+          1
+        ],
+        [
+          4,
+          38
+        ]
+      ],
+      "false_negatives": 4,
+      "false_positives": 1
+    },
+    {
+      "model_name": "K-Nearest Neighbours (PCA)",
+      "algorithm": "K-Nearest Neighbours",
+      "uses_pca": true,
+      "pickle_file": "knn_pca.pkl",
+      "accuracy": 0.956140350877193,
+      "precision": 0.9743589743589743,
+      "recall": 0.9047619047619048,
+      "f1_score": 0.9382716049382716,
+      "confusion_matrix": [
+        [
+          71,
+          1
+        ],
+        [
+          4,
+          38
+        ]
+      ],
+      "false_negatives": 4,
+      "false_positives": 1
+    },
+    {
+      "model_name": "Decision Tree (No PCA)",
+      "algorithm": "Decision Tree",
+      "uses_pca": false,
+      "pickle_file": "decision_tree.pkl",
+      "accuracy": 0.9298245614035088,
+      "precision": 0.9047619047619048,
+      "recall": 0.9047619047619048,
+      "f1_score": 0.9047619047619048,
+      "confusion_matrix": [
+        [
+          68,
+          4
+        ],
+        [
+          4,
+          38
+        ]
+      ],
+      "false_negatives": 4,
+      "false_positives": 4
+    },
+    {
+      "model_name": "Decision Tree (PCA)",
+      "algorithm": "Decision Tree",
+      "uses_pca": true,
+      "pickle_file": "decision_tree_pca.pkl",
+      "accuracy": 0.9473684210526315,
+      "precision": 0.9736842105263158,
+      "recall": 0.8809523809523809,
+      "f1_score": 0.925,
+      "confusion_matrix": [
+        [
+          71,
+          1
+        ],
+        [
+          5,
+          37
+        ]
+      ],
+      "false_negatives": 5,
+      "false_positives": 1
+    },
+    {
+      "model_name": "Random Forest (No PCA)",
+      "algorithm": "Random Forest",
+      "uses_pca": false,
+      "pickle_file": "random_forest.pkl",
+      "accuracy": 0.9736842105263158,
+      "precision": 1.0,
+      "recall": 0.9285714285714286,
+      "f1_score": 0.9629629629629629,
+      "confusion_matrix": [
+        [
+          72,
+          0
+        ],
+        [
+          3,
+          39
+        ]
+      ],
+      "false_negatives": 3,
+      "false_positives": 0
+    },
+    {
+      "model_name": "Random Forest (PCA)",
+      "algorithm": "Random Forest",
+      "uses_pca": true,
+      "pickle_file": "random_forest_pca.pkl",
+      "accuracy": 0.9385964912280702,
+      "precision": 0.926829268292683,
+      "recall": 0.9047619047619048,
+      "f1_score": 0.9156626506024096,
+      "confusion_matrix": [
+        [
+          69,
+          3
+        ],
+        [
+          4,
+          38
+        ]
+      ],
+      "false_negatives": 4,
+      "false_positives": 3
+    }
+  ],
+  "saved_model_files": {
+    "Logistic Regression (No PCA)": "logistic_regression.pkl",
+    "Logistic Regression (PCA)": "logistic_regression_pca.pkl",
+    "K-Nearest Neighbours (No PCA)": "knn.pkl",
+    "K-Nearest Neighbours (PCA)": "knn_pca.pkl",
+    "Decision Tree (No PCA)": "decision_tree.pkl",
+    "Decision Tree (PCA)": "decision_tree_pca.pkl",
+    "Random Forest (No PCA)": "random_forest.pkl",
+    "Random Forest (PCA)": "random_forest_pca.pkl"
+  },
+  "best_model_name": "Logistic Regression (PCA)"
+}
